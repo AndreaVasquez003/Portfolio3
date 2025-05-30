@@ -1,0 +1,61 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+.container__UP{
+    height: 100vh;
+    background-color: blueviolet;
+}
+
+.container__Grid{
+    height: 30%;
+    width: 100%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 0.25fr 2fr 2fr 0.25fr;
+}
+
+.container__Portrait1{
+    height: 70%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Portrait1__el{
+    height: auto;
+    width: 90%;
+}
+
+.ligne__yellow{
+    height: 100%;
+    width: 1px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: #FFEA00;
+}
+
+h1{
+    font-family: "Noto Sans Devanagari", sans-serif;
+    font-size: 67px;
+    width: 75%;
+}
+
+.item1{
+    grid-column: 2 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lettre__V{
+    font-family: "Miss Fajardose", cursive;
+}
