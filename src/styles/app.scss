@@ -3,10 +3,18 @@
     padding: 0%;
 }
 
+main{
+    position: relative;
+    overflow: hidden;
+}
+
 
 .container__UP{
     height: 100vh;
-    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .container__Grid{
@@ -15,20 +23,20 @@
     background-color: white;
     display: grid;
     grid-template-columns: 0.25fr 2fr 2fr 0.25fr;
+    grid-template-rows: 0.25fr 2fr 2fr 0.25fr;
 }
 
 .container__Portrait1{
     height: 70%;
-    width: 100%;
-    background-color: black;
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .Portrait1__el{
-    height: auto;
-    width: 90%;
+    width: 99%;
 }
 
 .ligne__yellow{
@@ -38,24 +46,374 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 2;
+    z-index: 99;
     background-color: #FFEA00;
 }
 
 h1{
     font-family: "Noto Sans Devanagari", sans-serif;
-    font-size: 67px;
-    width: 75%;
+    font-size: 41px;
+    font-weight: 600;
 }
 
 .item1{
     grid-column: 2 / 4;
+    grid-row: 2/4;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
-.lettre__V{
+.lettre__MF{
     font-family: "Miss Fajardose", cursive;
+    font-weight: 400;
 }
+
+.container__Grid p{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    font-family: "Noto Sans Devanagari", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+#para__modifUP{
+    display: none;
+}
+
+.container__Down{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.25fr 2fr 2fr 0.25fr;
+    grid-template-rows: 0.25fr 2fr 2fr 0.25fr;
+    position: relative;
+}
+
+.Portrait2__el{
+    height: auto;
+    width: 70%;
+}
+
+h2{
+    font-family: "Noto Sans Devanagari", sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    grid-row: 1;
+    grid-column: 2/3;
+}
+
+.item__Portrait{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.trait__yellow{
+    background-color: #FFEA00;
+    width: 30.5px;
+    height: 3px;
+}
+
+.item__BlocText{
+    grid-column: 2/4;
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+p{
+    font-family: "Noto Sans Devanagari", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.Portrait3__el{
+    display: none;
+}
+
+.Portrait4__el{
+    display: none;
+}
+
+.item__AndreaVasquez{
+    grid-row: 4 / 5;
+    grid-column: 2 / 6;
+    display: flex;
+    align-items: center;
+    gap: 13.5em;
+}
+
+@media(min-width: 400px){
+    h1{
+        font-size: 46px;
+    }
+
+    h2{
+        font-size: 41px;
+    }
+
+    .item__AndreaVasquez {
+        gap: 15.5em;
+    }
+}
+
+@media(min-width: 430px){
+
+    .item__AndreaVasquez {
+        gap: 16.5em;
+    }
+}
+
+@media(min-width: 700px){
+    h1{
+        font-size: 83px;
+    }
+
+    h2{
+        font-size: 58px;
+    }
+
+    .item__BlocText{
+        grid-column: 3/4;
+        margin-left: 46px;
+    }
+
+    .item__Portrait{
+        grid-column: 3/4;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .item__Portrait h2{
+        position: absolute;
+        left: 0%;
+        top: 6%;
+    }
+
+    .Portrait3__el{
+        display: block;
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    .Portrait2__el {
+        width: 80%;
+    }
+
+    .container__Grid p{
+        font-size: 18px;
+    }
+
+    #para__modifUP{
+        display: block;
+        grid-column: 3 / 4;
+        margin-left: 30%;
+    }
+
+    .item__AndreaVasquez {
+        gap: 35.5em;
+    }
+}
+
+@media(min-width: 800px){
+
+    #para__modifUP {
+        margin-left: 38em;
+    }
+}
+
+@media(min-width: 1000px){
+    h1 {
+        font-size: 115px;
+    }
+
+    h2 {
+        font-size: 83px;
+    }
+
+    #para__modifUP {
+        margin-left: 44%;
+    }
+
+    .item__AndreaVasquez{
+        gap: 49em
+
+    }
+}
+
+@media(min-width: 1150px){
+    #para__modifUP {
+        margin-left: 6%;
+    }
+
+    h1{
+        font-size: 130px;
+    }
+
+    .item__AndreaVasquez {
+        gap: 56em;
+    }
+}
+
+@media(min-width: 1300px){
+    h1 {
+        font-size: 155px;
+    }
+
+    #para__modifUP {
+        margin-left: 21%;
+    }
+
+    .Portrait2__el {
+        width: 100%;
+    }
+
+    .container__Down{
+        grid-template-columns: 0.25fr 2fr 2fr 2fr 2fr 0.25fr;
+    }
+
+    .container__Grid{
+        grid-template-columns: 0.12fr 2fr 2fr 0.12fr;
+    }
+
+    .item__BlocText {
+        grid-column: 5 / 6;
+        margin-left: 0;
+        justify-content: start;
+        margin-top: 6%;
+    }
+
+    .container__Portrait1 {
+        width: 95%;
+    }
+
+    .item__Portrait {
+        grid-column: 5 / 6;
+    }
+
+    .item__Portrait h2 {
+        grid-column: 2 / 4;
+    }
+
+    .Portrait4__el{
+        display: block;
+        grid-row: 3 / 4;
+        grid-column: 3 / 4;
+        margin-left: 15%;
+    }
+
+    .Portrait3__el{
+        grid-row: 2 / 3;
+        margin-top: 34%;
+    }
+
+    .item__AndreaVasquez{
+        gap: 68em;
+    }
+
+    .item__AndreaVasquez p{
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 102px;
+    }
+}
+
+@media(min-width: 1500px){
+    .container__Down{
+        grid-template-rows: 1fr 2fr 2fr 1fr;
+        grid-template-columns: 0.1fr 2fr 2fr 2fr 2fr 0.1fr;
+    }
+
+    .item__AndreaVasquez {
+        gap: 81em;
+    }
+
+    .container__Grid {
+        grid-template-columns: 0.05fr 2fr 2fr 0.05fr;
+    }
+
+    #para__modifUP {
+        margin-left: 34%;
+    }
+
+    h1 {
+        font-size: 186px;
+    }
+
+    .container__Portrait1 {
+        width: 98.5%;
+    }
+
+    .Portrait1__el {
+        width: 100%;
+        margin-top: 19%;
+    }
+
+    .item__AndreaVasquez {
+        gap: 83.5em;
+    }
+
+    .item__Portrait {
+        margin-right: 10%;
+    }
+
+    .item__BlocText {
+        margin-right: 10%;
+    }
+
+    .Portrait3__el {
+        margin-left: 10%;
+        margin-top: 29%;
+    }
+
+    .item__Portrait h2 {
+        top: 0%;
+    }
+
+}
+
+@media(min-width: 1600px){
+
+    #para__modifUP {
+        margin-left: 40.7%;
+    }
+
+    .container__Portrait1 {
+        width: 98%;
+    }
+
+    .item__AndreaVasquez {
+        gap: 92.5em;
+    }
+}
+
+@media(min-width: 1700px){
+    h1 {
+        font-size: 214px;
+    }
+
+    #para__modifUP {
+        margin-left: 43%;
+    }
+
+    .container__Portrait1 {
+        width: 98%;
+    }
+
+    .item__AndreaVasquez {
+        gap: 96em;
+    }
+}
+
+
+
+
