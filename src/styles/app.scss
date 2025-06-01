@@ -149,6 +149,89 @@ p{
     gap: 13.5em;
 }
 
+.item__AndreaVasquez p {
+    font-weight: 600;
+}
+
+/************************************ Page Works*/
+
+.container__2022{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.25fr 2fr 2fr 0.25fr;
+    grid-template-rows: 0.25fr 2fr 2fr 0.25fr;
+    position: relative;
+}
+
+.container__2024{
+    height: 200vh;
+    display: grid;
+    grid-template-columns: 0.25fr 2fr 2fr 0.25fr;
+    grid-template-rows: 0.25fr 2fr 2fr 2fr 2fr 0.25fr;
+
+}
+
+.item__Titre{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+}
+
+.item__Titre h2{
+    position: fixed;
+    top: 0%;
+    left: 8%;
+}
+
+.font__thin{
+    font-family: "Noto Sans Devanagari", sans-serif;
+    font-weight: 100;
+    font-size: 94px;
+}
+
+.item__work{
+    grid-column: 2/4;
+    margin-left: 9%;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+    gap: 10px;
+}
+
+.item__work--modifPosition1{
+    grid-row: 3/4;
+}
+
+.item__work--modifPosition2{
+    grid-row: 3/4;
+}
+
+.item__work--modifPosition3{
+    grid-row: 4/5;
+}
+
+.item__work--modifPosition4{
+    grid-row: 5/6;
+}
+
+.photos__siteWorks{
+    height: auto;
+    width: 90%;
+}
+
+.ligne__yellow--modif{
+    z-index: -1;
+}
+
+.item__AndreaVasquez--modif{
+    position: fixed;
+    bottom: 0%;
+}
+
 @media(min-width: 400px){
     h1{
         font-size: 46px;
@@ -167,6 +250,12 @@ p{
 
     .item__AndreaVasquez {
         gap: 16.5em;
+    }
+}
+
+@media(min-width: 600px){
+    .item__AndreaVasquez {
+        gap: 26.5em;
     }
 }
 
@@ -219,6 +308,10 @@ p{
     .item__AndreaVasquez {
         gap: 35.5em;
     }
+
+    .font__thin {
+        font-size: 169px;
+    }
 }
 
 @media(min-width: 800px){
@@ -245,6 +338,25 @@ p{
         gap: 49em
 
     }
+
+    .container__2024{
+        height: 120vh;
+        display: grid;
+        grid-template-rows: 0.25fr 2fr 2fr 2fr 2fr 0.25fr;
+
+    }
+
+    .item__work--modifPosition2{
+        grid-column: 2/3;
+    }
+
+    .item__work--modifPosition3{
+        grid-column: 3 / 4;
+    }
+
+    .item__work--modifPosition4 {
+        grid-column: 2 / 3;
+    }
 }
 
 @media(min-width: 1150px){
@@ -258,6 +370,12 @@ p{
 
     .item__AndreaVasquez {
         gap: 56em;
+    }
+}
+@media(min-width:1200px){
+    .container__2024{
+        height: 140vh;
+
     }
 }
 
@@ -318,12 +436,39 @@ p{
     }
 
     .item__AndreaVasquez p{
-        font-weight: 600;
         font-size: 18px;
     }
 
     h2 {
         font-size: 102px;
+    }
+
+    .container__2024 {
+        height: 160vh;
+        grid-template-columns: 0.12fr 2fr 2fr 0.12fr;
+    }
+
+    .item__AndreaVasquez--modif {
+        left: 3%;
+        gap: 70em;
+    }
+
+    .item__Titre h2 {
+        left: 4%;
+    }
+
+    .photos__siteWorks--elModif{
+        width: 70%;
+    }
+
+    .item__work--modifPosition1 {
+        margin-left: 24%;
+    }
+}
+
+@media(min-width: 1470px){
+        .item__AndreaVasquez--modif {
+        gap: 79em;
     }
 }
 
@@ -391,9 +536,18 @@ p{
         width: 98%;
     }
 
+    .item__AndreaVasquez--modif {
+        gap: 65em;
+    }
+
     .item__AndreaVasquez {
         gap: 92.5em;
     }
+
+    .container__2024 {
+        height: 180vh;
+    }
+
 }
 
 @media(min-width: 1700px){
@@ -411,6 +565,17 @@ p{
 
     .item__AndreaVasquez {
         gap: 96em;
+    }
+
+    .item__AndreaVasquez--modif {
+        gap: 93em;
+    }
+}
+
+@media(min-width: 1700px){
+
+    .item__AndreaVasquez--modif {
+        gap: 104em;
     }
 }
 
