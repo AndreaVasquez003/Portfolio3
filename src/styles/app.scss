@@ -679,6 +679,14 @@ svg{
     display: none;
 }
 
+.trait__black{
+    display: none;
+}
+
+.MisePage__el--none{
+    display: none;
+}
+
 @media(min-width: 390px){
     .wireframe__el {
         height: auto;
@@ -1335,6 +1343,7 @@ svg{
         grid-column: 4 / 6;
         grid-row: 30 / 31;
         justify-content: start;
+        margin-left: 5px;
     }
 
     .item__FontsCouleur6 {
@@ -1474,6 +1483,208 @@ svg{
     }
 }
 
+@media(min-width: 1400px){
+    .item__ProjetJanus {
+        grid-column: 4 / 5;
+    }
+
+    .item__Challenge {
+        grid-column: 5 / 6;
+    }
+
+    .item__Choix {
+        grid-column: 2 / 5;
+    }
+
+    .choix__right {
+        margin-left: 34%;
+    }
+
+    .choix__left {
+        position: relative;
+    }
+
+    .trait__black {
+        position: absolute;
+        display: block;
+        height: 1px;
+        width: 90%;
+        background-color: black;
+        margin-left: 97%;
+        margin-top: 13%;
+    }
+
+    .BlocWireframe1 {
+        height: 91%;
+    }
+
+    .item__MisePage1 {
+        grid-column: 4 / 5;
+    }
+
+    .item__MisePage3 {
+        grid-column: 5 / 6;
+        grid-row: 15 / 16;
+    }
+
+    .item__MisePage5 {
+        justify-content: end;
+    }
+
+    .MisePage__el--modif {
+        height: 90%;
+    }
+
+    .svg__el3 {
+        top: -6%;
+    }
+
+    .svg__el2 {
+        left: 26%;
+    }
+
+    .item__Interactivite1 {
+        grid-column: 4 / 5;
+        grid-row: 17 / 18;
+        margin-left: 5px;
+    }
+
+    .item__Interactivite2{
+        height: 85%;
+        grid-row: 18 / 19;
+    }
+
+    .item__Interactivite2 img{
+        height: 85%;
+    }
+
+    .item__Interactivite4 {
+        grid-column: 5 / 6;
+        grid-row: 18 / 19;
+    }
+
+    .item__Interactivite5 {
+        align-items: center;
+        justify-content: end;
+        grid-row: 19 / 20;
+    }
+
+    .item__Interactivite3 {
+        grid-row: 19 / 20;
+    }
+
+    .svg__el6 {
+        top: 39%;
+        width: 48%;
+    }
+
+    .item__Interactivite7 {
+        align-items: end;
+        justify-content: end;
+        position: relative;
+        grid-row: 20 / 22;
+    }
+
+    .item__Interactivite6 {
+        grid-row: 21 / 22;
+    }
+
+    .Interactivite__el--absolute {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+    }
+
+    .item__Interactivite7 img {
+        width: 46%;
+    }
+
+    .svg__el7 {
+        width: 28%;
+        top: -2%;
+        left: 9%;
+    }
+
+    .svg__el8 {
+        bottom: 20%;
+        right: 5%;
+        width: 19%;
+    }
+
+    .item__FontsCouleur1 {
+        grid-column: 4 / 6;
+        grid-row: 23 / 24;
+        justify-content: center;
+    }
+
+    .item__FontsCouleur2 {
+        grid-row: 24 / 25;
+    }
+
+    .item__FontsCouleur2 img {
+        width: 46%;
+    }
+
+    .svg__el10 {
+        left: 57%;
+    }
+
+    .svg__el9 {
+        left: 25%;
+    }
+
+    .item__FontsCouleur3 {
+        grid-column: 3 / 4;
+        grid-row: 26 / 28;
+        justify-content: start;
+    }
+
+    .svg__el12 {
+        right: 23%;
+        width: 44%;
+    }
+
+    .item__FontsCouleur5 {
+        grid-column: 4 / 5;
+        grid-row: 29 / 30;
+    }
+
+    .item__FontsCouleur6 {
+        grid-row: 29 / 31;
+    }
+
+    .item__FontsCouleur7{
+        grid-column: 3 / 4;
+        grid-row: 31 / 32;
+    }
+
+    .item__FontsCouleur8 {
+        grid-column: 4 / 6;
+        grid-row: 31 / 33;
+        position: relative;
+    }
+
+    .MisePage__el--none{
+        display: block;
+        position: absolute;
+        top: 42%;
+    }
+
+    .container__BlocTextCaseStdy {
+        grid-template-rows: repeat(34, 1fr);
+    }
+
+    .circle__el {
+        width: 2%;
+    }
+
+    .container__CaseScroll h1{
+        font-size: 140px;
+    }
+
+
+}
+
 @media(min-width: 1470px){
         .item__AndreaVasquez--modif {
         gap: 79em;
@@ -1534,6 +1745,55 @@ svg{
 
 }
 
+@media(min-width:1550px){
+    .BlocWireframe1 {
+        height: 97%;
+    }
+
+    .svg__el4 {
+        right: 33%;
+    }
+
+    .item__MisePage3 {
+        grid-column: 4 / 6;
+        grid-row: 14 / 15;
+        justify-content: center;
+        margin-left: 23%;
+    }
+
+    .item__MisePage4{
+        justify-content: end;
+    }
+
+    .svg__el4 {
+        right: 25%;
+        bottom: 14%;
+    }
+
+    .item__Interactivite2{
+        justify-content: center;
+    }
+
+    .svg__el5 {
+        width: 48%;
+        left: 6%;
+        top: 3%;
+    }
+
+    .item__Interactivite4 {
+        grid-column: 4 / 6;
+        margin-left: 23%;
+    }
+
+    .item__FontsCouleur1 {
+        grid-column: 4 / 5;
+    }
+
+    .MisePage__el--none {
+        top: 51%;
+    }
+}
+
 @media(min-width: 1600px){
 
     #para__modifUP {
@@ -1558,6 +1818,72 @@ svg{
 
 }
 
+@media(min-width: 1660px){
+    .BlocWireframe__list {
+        margin-top: 0;
+    }
+
+    .wireframe__el {
+        width: 68%;
+    }
+
+    .item__MisePage3 {
+        margin-left: 31%;
+    }
+
+    .svg__el4 {
+        right: 25%;
+        width: 17%;
+    }
+
+    .item__Interactivite4 {
+        margin-left: 31%;
+    }
+
+    .item__FontsCouleur8 img {
+        width: 39%;
+    }
+
+    .MisePage__el--none {
+        top: 40%;
+    }
+
+    .container__CaseScroll .item__AndreaVasquez {
+        gap: 89.5em;
+    }
+
+    .svg__el11 {
+        left: 13%;
+    }
+
+    .svg__el12 {
+        right: 28%;
+        width: 38%;
+    }
+
+    .item__FontsCouleur2 img {
+        width: 35%;
+    }
+
+    .item__FontsCouleur2 {
+        justify-content: center;
+    }
+
+    .svg__el10 {
+        left: 54%;
+    }
+
+    .svg__el9 {
+        left: 31%;
+    }
+
+    .svg__el3 {
+        top: -4%;
+        width: 63%;
+        left: 22%;
+    }
+}
+
 @media(min-width: 1700px){
     h1 {
         font-size: 214px;
@@ -1576,15 +1902,48 @@ svg{
     }
 
     .item__AndreaVasquez--modif {
-        gap: 93em;
-    }
-}
-
-@media(min-width: 1700px){
-
-    .item__AndreaVasquez--modif {
         gap: 104em;
     }
+
+    .wireframe__el {
+        width: 60%;
+    }
+
+    .svg__el4 {
+        right: 20%;
+    }
+
+    .item__MisePage3 {
+        margin-left: 39%;
+    }
+
+    .item__Interactivite4{
+        margin-left: 39%;
+    }
+
+    .svg__el6 {
+        top: 41%;
+        width: 41%;
+        right: -3%;
+    }
+
+    .item__FontsCouleur2 img {
+        width: 33%;
+    }
+
+    .item__FontsCouleur8 img {
+        width: 30%;
+    }
+
+    .svg__el12 {
+        right: 32%;
+        width: 32%;
+    }
+
+    .container__CaseScroll .item__AndreaVasquez {
+        gap: 104em;
+    }
+    
 }
 
 
