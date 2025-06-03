@@ -2476,7 +2476,6 @@ a{
         width: 63%;
         left: 22%;
     }
-
 }
 
 @media(min-width: 1700px){
@@ -2494,6 +2493,10 @@ a{
 
     .item__AndreaVasquez {
         gap: 96em;
+    }
+
+    .item__AndreaVasquez--modif {
+        gap: 104em;
     }
 
     .wireframe__el {
