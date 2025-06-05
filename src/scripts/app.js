@@ -73,6 +73,25 @@ gsap.from(split2.lines, {
 });
 
 
+gsap.to(".container__CaseScroll h2", {
+  scrollTrigger: {
+    trigger: ".container__CaseScroll h2",
+    start: "top 20%",
+    pin:true,
+    scrub:true,
+  }
+});
+
+gsap.to(".container__BlocTextCaseStdy2 h2", {
+  scrollTrigger: {
+    trigger: ".container__BlocTextCaseStdy2 h2",
+    start: "top 20%",
+    pin:true,
+    scrub:true,
+  }
+});
+
+
 
 gsap.set(".item__Portrait", { overflow:"hidden"});
 gsap.set(".Portrait2__el", { y:-1000});
